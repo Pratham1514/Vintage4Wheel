@@ -1,0 +1,476 @@
+/* Body */
+body {
+  background-color: #efe1d1;
+  font-family: "Kalam", cursive;
+  font-family: "Lora", serif;
+}
+
+/* Navbar */
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  background-color: #251749;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header .a {
+  color: #ffcaca;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.navbar a {
+  position: relative;
+  font-size: 17px;
+  color: #ffecef;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.navbar .b::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffecef;
+  transition: 0.3s;
+}
+.navbar .b:hover::before {
+  width: 100%;
+}
+.navbar .sing {
+  border: 2px solid #ffecef;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+.navbar .sing:hover {
+  background-color: #e19898;
+  color: #251749;
+  border-color: #e19898;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Carousel */
+.c-item {
+  height: 92vh;
+}
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.c-img:hover {
+  filter: brightness(1);
+}
+.c-item h5 {
+  color: #fff;
+  font-weight: 900;
+}
+.c-item p {
+  color: #ffecef;
+  font-weight: 500;
+}
+
+/* Cards */
+.container {
+  margin-left: 4.5%;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 70px;
+}
+.card_container {
+  margin-left: 4.5%;
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 5.5%;
+}
+.card {
+  background-color: #e9b384;
+}
+.card .btn {
+  background-color: #7c9d96;
+  border-color: #7c9d96;
+  color: #3f2305;
+}
+.card .card-body {
+  color: #3f2305;
+}
+.card:hover {
+  box-shadow: 0px 15px 50px #222;
+  background-color: #251b37;
+  color: #ffe5ad;
+}
+.card .card-body:hover {
+  color: #e9b384;
+}
+.card .btn:hover {
+  background-color: #fffbeb;
+  border-color: #fffbeb;
+  color: #251749;
+}
+
+/* Footer */
+
+.feet {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+.feet .data {
+  display: inline-flex;
+}
+.data .data1 {
+  margin-left: 2rem;
+}
+.data1 a {
+  position: relative;
+  color: #3f2305;
+  text-decoration: none;
+}
+.data a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3f2305;
+  transition: 0.3s;
+}
+.data a:hover::before {
+  width: 100%;
+}
+
+/* about page */
+.main1 {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.main1 .tex {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #3f2305;
+  padding: 1.5rem;
+}
+.main1 .para {
+  font-size: 1.3rem;
+  color: #251749;
+  font-weight: bold;
+  padding: 0rem 5rem;
+}
+.para_con {
+  width: 50%;
+  padding: 5rem 4rem;
+}
+.imae {
+  width: 70%;
+  margin-left: 7rem;
+}
+.para_con .tex1 {
+  font-size: 2.5rem;
+  color: #3f2305;
+  font-weight: 600;
+}
+.para_con .para1 {
+  font-size: 1.3rem;
+  color: #251749;
+}
+.main1 a {
+  color: #251749;
+  text-decoration: none;
+  position: relative;
+}
+.main1 a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #251749;
+  transition: 0.3s;
+}
+.main1 a:hover::before {
+  width: 100%;
+}
+
+/* Contact Page */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+.contact .contact_first .contact_para {
+  font-size: large;
+  font-weight: 600;
+  color: #251749;
+}
+.contact_first .para_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  color: #251749;
+}
+.contact_first .para_info {
+  font-size: 1.2rem;
+  color: #251749;
+}
+.contact_first .imae1 {
+  width: 80%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+.contact_sec .sec_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  color: #251749;
+  margin-top: 2rem;
+}
+.contact_sec .sec_icon {
+  font-size: 1.2rem;
+  color: #251749;
+}
+.contact_sec .sec_icon .icon_i {
+  text-decoration: none;
+  color: #251749;
+  position: relative;
+}
+.contact_sec .sec_icon .icon_i::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #251749;
+  transition: 0.3s;
+}
+.contact_sec .sec_icon .icon_i:hover::before {
+  width: 100%;
+}
+.contact_sec .sec_icon .icon_i .fa-brands {
+  font-size: 1.7rem;
+}
+.contact_sec .sec_icon .icon_i .fa-brands:hover {
+  font-size: 2rem;
+  transition: ease-in-out 0.3s;
+}
+.contact_sec .sec_title1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  color: #251749;
+  margin-top: 4.5rem;
+}
+.contact_sec .sec_para {
+  font-size: 1.2rem;
+  color: #251749;
+}
+.contact_sec{
+  display: flex;
+  flex-direction: column;
+}
+.contact_sec .contact_form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #ADC4CE;
+  width: 99%;
+  height: 28rem;
+  box-shadow: 2px 5px 10px #000;
+  border-radius: 2rem;
+}
+.contact_sec .contact_form:hover{
+  box-shadow: 7px 10px 25px #222;
+  transition: ease-in-out 0.5s;
+}
+.contact_form .sec_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  color: #251749;
+}
+.contact_form .contact_input{
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.1rem solid #3f2305;
+  color: #3f2305;
+}
+.contact_form .contact_btn{
+  width: auto;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 1px 2px 4px #000;
+  background-color: #251749;
+  color: #ffecef;
+}
+.contact_form .contact_btn:hover{
+  background-color: #e19898;
+  color: #3f2305;
+  box-shadow: 2px 4px 6px #222;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+
+/* sign up page */
+
+.login_back{
+  width: 100%;
+  height: 92vh;
+}
+.login_back .login_back_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+.login_box{
+  border-radius: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 70%;
+}
+.box_sec1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: brightness(1);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: relative;
+}
+.box_sec2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  background-color: #efe1d1;
+  /* background-image: linear-gradient(to right, #F9F5F6, #F8E8EE, #FDCEDF, #F2BED1); */
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  align-items: center;
+}
+.box_sec2 .sec2_input{
+  width: 70%;
+  height: 2rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: #3E001F;
+  box-shadow: 0px 1px 3px #3E001F;
+}
+.box_sec2 .sec2_input:hover{
+  width: 71%;
+  height: 2.5rem;
+  box-shadow: 1px 3px 5px #3E001F;
+  border-bottom: 2px solid #3E001F;
+  transition: ease-in-out 0.2s;
+}
+.box_sec2 .sec2_btn{
+  padding: 0.3rem 5rem;
+  background-color: #3E001F;
+  color: #efe1d1;
+  border-radius: 1rem;
+}
+.box_sec2 .sec2_btn:hover {
+  background-color: #251749;
+  border-color: #251749;
+  color: #e19898;
+  transition: ease-in 0.3s;
+  box-shadow: 2px 4px 6px #251749;
+  font-weight: 900;
+}
+.box_sec1 p{
+  position: relative;
+  top: -75%;
+  text-align: center;
+}
+.box_sec1 a{
+  position: relative;
+  top: -75%;
+  left: 41.5%;
+}
+.box_sec1 .p_title{
+  font-size: xx-large;
+  color: #251749;
+}
+.box_sec1 .p_text{
+  font-size: large;
+  color: #3E001F;
+}
+.box_sec1 .p_text1{
+  font-size: large;
+  color: #3E001F;
+}
+.box_sec1 .sec1_btn{
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #efe1d1;
+  background-color: #251b37;
+}
+.box_sec1 .sec1_btn:hover{
+  background-color: #e19898;
+  color: #3f2305;
+  box-shadow: 2px 4px 6px #222;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+
+/* Sign in page */
+
+.box_sec2 .sec2_a{
+  text-decoration: none;
+  color: #3E001F;
+  font-size: 2rem;
+  position: relative;
+}
+.box_sec2 .sec2_a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3E001F;
+  transition: 0.3s;
+}
+.box_sec2 .sec2_a:hover::before {
+  width: 100%;
+}
+.box_sec2 .sec2_a:hover{
+  font-size: 2.2rem;
+}
